@@ -63,6 +63,7 @@ export class StoreService {
         return this._book;
     }
 
+    // Currently broken. API only returns ~8 characters
     getCharacters = (): BehaviorSubject<Array<ICharacter>> => {
         if (this._characters.getValue().length <= 0 && !this._charactersSub) {
             this._charactersSub = this.api.getCharacters().subscribe(
