@@ -1,0 +1,5 @@
+<app-book [book]="book | async"></app-book>
+
+<ul>
+    <li *ngFor="let id of characters"><app-character [id]="id"></app-character></li>
+</ul>

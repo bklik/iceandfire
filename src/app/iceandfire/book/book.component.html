@@ -1,0 +1,7 @@
+<h1>{{book?.name}}<span *ngIf="!book">Loading...</span></h1>
+<h2>{{book?.authors}}</h2>
+<h3>{{book?.publisher}}</h3>
+<p *ngIf="book">Released: {{book?.released | date:'shortDate'}}</p>
+<p *ngIf="book">Pages: {{book?.numberOfPages}}</p>
+<p *ngIf="book">ISBN: {{book?.isbn}}</p>
+

@@ -1,0 +1,3 @@
+<ng-template ngFor let-book [ngForOf]="store.getBooks() | async">
+    <app-book [book]="book" routerLink="/book/{{book.id}}"></app-book>
+</ng-template>

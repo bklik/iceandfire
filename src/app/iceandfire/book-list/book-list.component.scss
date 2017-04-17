@@ -1,0 +1,9 @@
+:host {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px;
+
+    app-book {
+        width: calc((100% / 3) - 24px);
+    }
+}
